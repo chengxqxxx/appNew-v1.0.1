@@ -1,0 +1,70 @@
+border-bottom-1px($color)
+  position:relative
+  &:after
+    display: block
+    position: absolute
+    left:0
+    bottom: 0
+    width:100%
+    border-bottom:1px solid $color
+    content: ''
+border-bottom-active($color)
+  position:relative
+  &:after
+    display: block
+    position: absolute
+    left:0
+    bottom: 0
+    width:100%
+    border-bottom:3px solid $color
+    content: ''
+
+border-top-1px($color)
+  position:relative
+  &:before
+    display: block
+    position: absolute
+    left:0
+    top: 0
+    width:100%
+    border-top:1px solid $color
+    content: ''
+
+border-right-1px($color)
+  position:relative
+  &:after
+    display: block
+    position: absolute
+    top:0
+    bottom: 0
+    width:100%
+    border-right:1px solid $color
+    content: ''
+
+border-1px($color)
+  border:1px solid $color
+
+bg-image($url)
+  background-image:url($url+"bg.png")
+
+button-confirm($color)
+  width:160px
+  padding:10px 20px
+  color:#fff
+  background-color:$color
+  border:none
+  border-radius:5px
+  &:focus
+    outline:none
+  
+input($width,$focuscolor)
+  width:$width
+  padding:10px
+  border:1px #e0e0e0 solid
+  border-radius:5px
+  &::placeholder
+    color:#BDBDBD
+  &:focus
+    outline:none
+    border-color:$focuscolor
+
